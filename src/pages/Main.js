@@ -68,6 +68,7 @@ function Main({ navigation }) {
     });
     setDevs(response.data.devs);
     setupWebsocket();
+    Keyboard.dismiss();
   }
 
   function handleRegionChanged(region) {
